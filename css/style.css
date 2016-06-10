@@ -1,12 +1,30 @@
 body{
     font-family: serif;
-}
-.wrapper{
     background: url(../image/bag-img.png);
 }
+/* .wrapper{
+    background: url(../image/bag-img.png);
+} */
 .container{margin: 0 auto;}
-#wd-header-top {
+
+.wd-header-top {
     background: rgba(0,0,0,0.8);
+}
+.container_fixed{
+    z-index: 5;
+    width: 100%;
+}
+.fixed{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    opacity: 0.9;
+    background: url(../image/nav-bg.jpg) repeat;
+    top: 0;
+    box-shadow: 15px;
+}
+.menu-wrap{
+
 }
 /* code cho phần các icon như email, đăng nhập đăng xuất */
 .wd-contact {
@@ -34,7 +52,7 @@ body{
     padding-left: 4px \9;
     /* IE7-8 doesn't have border-radius, so don't indent the padding */
 
-    margin-bottom: 0;
+    margin-bottom: 10px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -67,11 +85,16 @@ body{
 .logo{
     margin:18px 0;
 }
+.logo img{
+        width: 150px;
+    }
+
+
 /* css cho menu */
 .detail-menu {
     margin: 0;
     padding: 0;
-    margin-top:35px;
+    margin-top:25px;
     margin-bottom: 15px;
 }
 .navbar {
@@ -85,17 +108,23 @@ body{
 }
 .navbar-header a {
     float: left;
-    height: 50px;
-    padding: 15px 15px;
     font-size: 16px; 
     font-family: "Time News Roman";
     font-weight: bold;
     line-height: 20px;
-    background-color: #e7e7e7;
-    border-bottom: solid 1px #000;
+
 }
 .navbar-default .navbar-brand:hover{
     background: #e7e7e7;
+}
+.aaa{
+    display: none;
+}
+@media(max-width: 770px){
+    .aaa{
+        display: inline;
+        margin-bottom: 30px;
+    }
 }
 .navbar ul li:hover{
     background-color: #e7e7e7;
@@ -108,7 +137,7 @@ ul.navbar-nav>li>a {
     padding-top: 15px;
 }
 .nav>li>a{
-    padding:10px 20px;
+    padding:10px 26px;
     font-size: 15px;
     font-family: "Time News Roman"; 
 }
@@ -144,6 +173,7 @@ ul.navbar-nav>li>a {
 .wd-catelogies .div-img{
     height: 320px;
     width: auto ;
+    margin-top: 20px;
 }
 .wd-catelogies .div-img img {
     width: 100%;
@@ -227,7 +257,6 @@ ul.navbar-nav>li>a {
     color: #888;
 }
 .main-wrap span{
-    padding: 5px 37px;
     font-size:14px;
     color:  #676161;
     font-family: "Time News Romain"
@@ -253,7 +282,6 @@ ul.navbar-nav>li>a {
     text-align: center;
     border-bottom: dashed 1px #8d2424;
     height: 45px;
-    width: 400px;
     margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -436,7 +464,171 @@ strong{
     -webkit-transition: all 2s ease;
     -webkit-transform: rotate(360deg);
 }
+.map iframe{
+    max-width: 100%;
+}
 
 /* Responsive */
+@media(max-width: 1200px){
+    .nav>li>a{
+    padding:10px 14px;
+    }
+}
+
+ @media (max-width: 950px){
+    .aaa img{
+        width:80%;
+    }
+} 
+@media(max-width: 1024px){
+    .wd-contact i.format-icon {
+    font-size:14px;}
+
+   .main-wrap .paragraph .text-para {
+    font-size: 17px;
+    color: #2a2a2a;
+    padding: 0px;
+    line-height: 27px;
+    font-family: "Time News Romain";
+    height: 111px;
+    overflow: hidden;}
+
+    .title {
+    font-size: 20px;
+    color: #8d2424;
+    font-family: serif;
+    text-align: center;
+    border-bottom: dashed 1px #8d2424;
+    height: 45px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;}
+
+    .main-wrap span {
+    font-size: 12px;
+    display: inherit;
+    }
+
+    .ih-item.square {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border: 8px solid #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;}
+
+    .detail-news p {
+    font-size: 16px;
+    font-family: "Time News Romain";
+    color: #6e6c6d;
+    text-align: justify;
+    padding: 5px;
+    height: 116px;
+    overflow: hidden;}
+}
+@media(max-width: 770px){
+    .logo{
+        margin: 0;
+    }
+    .logo img{
+        display: none;
+    }
+    .ih-item.square {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        border: 8px solid #fff;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        margin-bottom: 15px;}
+
+    .ih-item.square.effect6 .info h3{
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+        padding: 10px;
+        background: #111111;
+        margin: 30px 0 0 0;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;}
+
+    .main-wrap a img.img {
+        width: 65%;
+        height: 156px;
+        border: solid 1px #848383;
+        padding: 3px;
+        color: #888;
+        margin-top: 15px;
+    }
+
+
+    .h2-title {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .wd-catelogies .div-img{
+        height: 320px;
+        width: auto ;
+        margin-top: 20px;
+    }
+    .wd-catelogies .div-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .wd-catelogies .detail-text{
+        height: 90px;
+        position: relative;
+        width: auto;
+        background: #191717;
+        opacity: 0.7;
+        top: -186px;
+    }
+    .wd-catelogies .detail-text p{
+        font-weight:bold;
+        color:#fff;
+        font-size: 14px;
+        font-family: "Time News Romain" ;
+        padding: 25px 5px;
+    }
 
 }
+@media(max-width: 670px){
+
+     .list-inline>li {
+        display: table;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .wd-search {
+        float: left;
+        margin-left:10px;
+    }
+}
+
+@media(max-width: 500px){
+    .main-wrap a img.img{
+        width: 90%;
+        height: 156px;
+        border: solid 1px #848383;
+        padding: 3px;
+        color: #888;
+    }
+
+    .ih-item.square {
+        position: relative;
+        width: 100%;
+        height: 102px;
+        border: 8px solid #fff;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        margin-bottom: 15px;
+    }
+
+    .list-inline>li {
+        display: table;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
